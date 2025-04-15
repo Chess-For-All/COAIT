@@ -1,20 +1,32 @@
-def load_file(a):
-    f = open(a.path)
-    file_data = {"PATH": a.path, "CODE": f}
-    return file_data
+def getCode(file1):
+    C = file1.url
+    code = C.data
+    return code 
+    return C
+
+def load_file(file_text, file_path=None):
+    file_data = {"CODE": file_text, "PATH": file_path}
+    lf = open(file_data)
+    return lf
 
 def lookforcommit():
-    load_file(requests.get(https://github.com/Chess-For-All/COAIT/commit))
-    return file_data.CODE
+    URL = https://github.com/Chess-For-All/COAIT/commit
+    Pth = URL.data.path
+    LFP = load_file(requests.get(https://github.com/Chess-For-All/COAIT/commit), Pth)
+    return LFP.PATH 
 
-def use(file):
+def getFile(file):
+    getCode(file)
+    load_file(requests.get(C), file)
+
+def using(FILE):
+    getFile(FILE)
     YAML = {
-      "name": "using",
-      "jobs":
+      "name": "coding",
+      "jobs": 
         "Work":
-          "push": file,
-          "version": "1.0.0"
+          "push": lf, "version": 1.0.0
     }
     return YAML
 
-use(lookforcommit())
+using(lookforcommit())
