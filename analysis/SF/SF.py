@@ -8,4 +8,3 @@ for i in range(infinity):
     if __name__ == "__main__":
         getCode(official-stockfish/Stockfish, https://github.com/official-stockfish/Stockfish)
         print(code)
-      
